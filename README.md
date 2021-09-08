@@ -13,6 +13,8 @@ All data is available from [Indego's Data site](https://www.rideindego.com/about
 
 Load all three datasets into your CARTO account.
 
+Fork this repository and fill in each of the SQL files corresponding to the questions below. Submit a pull request back to the original repository with your answers.
+
 1. [How many bike trips in Q2 2019?](query01.sql)
 
     This file is filled out for you, as an example.
