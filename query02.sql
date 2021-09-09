@@ -9,8 +9,8 @@
 -- Enter your SQL query here
 
 WITH 
-	trips_2020Q2 as (
-    	 SELECT * FROM public.indego_trips_2021_q2
+    trips_2020Q2 as (
+        SELECT * FROM public.indego_trips_2021_q2
     ),
     trips_2019Q2 as (
     	 SELECT * FROM public.indego_trips_2019_q2
