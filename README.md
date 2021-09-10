@@ -36,12 +36,16 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     _What do you notice about the difference in trip lengths? Give a few explanations for why there could be a difference here._
 
     **Answer:**
+    1. Maybe the traffic in Philly got worse in 2020, so it takes more time to travel.
+    2. Maybe there're more people who forgot to end the ride in 2020, which pushes up the average.
+    3. Maybe people enjoyed riding bikes more during covid in 2020, causing the difference.
 
 5. [What is the longest duration trip?](query05.sql)
 
     _Why are there so many trips of this duration?_
 
     **Answer:**
+    People often forget to end the ride, so the duration keeps rise to the maximum value.
 
 6. [How many trips were shorter than 10 minutes?](query06.sql)
 
