@@ -3,7 +3,7 @@
 */
 
 -- Enter your SQL query here
-SELECT avg(duration) AS duration_mean
+SELECT round(avg(duration),2) AS duration_mean
 FROM indego_trips_2019_q2
 
---result:23.674069802378437
+--result:23.67
