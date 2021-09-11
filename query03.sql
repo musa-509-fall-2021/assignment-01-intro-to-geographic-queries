@@ -3,4 +3,7 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT avg(duration) AS duration_mean
+FROM indego_trips_2019_q2
+
+--result:23.674069802378437
