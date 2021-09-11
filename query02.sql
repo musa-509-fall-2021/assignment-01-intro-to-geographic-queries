@@ -7,9 +7,10 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT round(((count(*)-206354)/2063.54),2)::text||'%' AS perc_change
+From indego_trips_2020_q2
 
-
+-- Result: -9.58%
 
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
