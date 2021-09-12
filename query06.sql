@@ -3,4 +3,8 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT COUNT(*) AS shorter_than_ten
+FROM indego_trips_2020_q2
+WHERE duration < 10
+
+-- result:46729
