@@ -6,4 +6,8 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT id,name,st_distance(the_geom, 'POINT(-75.19268489458014 39.95241719826734)'::geography)
+FROM indego_station_statuses
+WHERE st_distance(the_geom, 'POINT(-75.19268489458014 39.95241719826734)'::geography) IN 
+(SELECT MIN(st_distance(the_geom, 'POINT(-75.19268489458014 39.95241719826734)'::geography))
+ FROM indego_station_statuses)
