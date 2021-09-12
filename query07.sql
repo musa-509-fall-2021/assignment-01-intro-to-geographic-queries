@@ -3,4 +3,8 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT count(*) 
+FROM indego_trips_2020_q2
+WHERE EXTRACT(DAY FROM end_time::date)-EXTRACT(DAY FROM start_time::date) = 1
+
+--result:2557
