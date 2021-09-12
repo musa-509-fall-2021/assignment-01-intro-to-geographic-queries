@@ -3,4 +3,7 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT  max(duration) AS duration_max
+FROM indego_trips_2020_q2
+
+--result:1440
