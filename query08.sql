@@ -3,21 +3,25 @@
 */
 
 -- Enter your SQL query here
-WITH start_station_amount AS(SELECT start_station,COUNT(*) AS start_number 
+WITH start_station_amount AS(SELECT start_station
 	FROM indego_trips_2019_q2
-	WHERE EXTRACT(HOUR FROM START_TIME) = 7 AND EXTRACT(HOUR FROM END_TIME) = 9
-	GROUP BY start_station)
+	WHERE EXTRACT(HOUR FROM START_TIME) = 7 AND EXTRACT(HOUR FROM END_TIME) = 9)
     ,end_station_amount AS(
-	SELECT end_station,COUNT(*) AS end_number
+	SELECT end_station
    FROM indego_trips_2019_q2
-	WHERE EXTRACT(HOUR FROM START_TIME) = 7 AND EXTRACT(HOUR FROM END_TIME) = 9
-	GROUP BY end_station
-   )
-,joined_table AS(
-SELECT *
-FROM start_station_amount ssa
-FULL JOIN end_station_amount esa
-ON ssa.start_station = esa.end_station)
+	WHERE EXTRACT(HOUR FROM START_TIME) = 7 AND EXTRACT(HOUR FROM END_TIME) = 9)
+, unioned_table as(
+SELECT start_station
+FROM start_station_amount
+UNION ALL 
+SELECT end_station
+FROM end_station_amount)
 
-SELECT *
-FROM joined_table
+SELECT start_station,COUNT(*) AS frequency
+FROM unioned_table
+GROUP BY start_station
+ORDER BY 2 DESC
+LIMIT 5
+
+--result:3021,3102,3156,3052,3045
+
