@@ -1,6 +1,6 @@
 # Assignment 1
 
-**Due: Sept 14, 2021 by 11:59pm ET**
+**Due: Sept 19, 2021 by 11:59pm ET**
 
 ## Datasets
 
