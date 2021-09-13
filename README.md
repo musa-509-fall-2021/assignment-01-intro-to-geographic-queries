@@ -51,7 +51,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
     _Hint 2: Days of the month can be retrieved from a timestamp using the [EXTRACT](https://www.postgresql.org/docs/12/functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT) function. See also some of the follow alongs from the Lecture in week 2._
 
-8. [Give the five most popular stations between 7am and 10am in 2019.](query08.sql)
+8. [Give the five most popular starting stations between 7am and 10am in 2019.](query08.sql)
 
     _Hint: Use the `EXTRACT` function to get the hour of the day from the timestamp._
 
