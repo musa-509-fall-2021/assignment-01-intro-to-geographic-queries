@@ -9,7 +9,7 @@
 -- Enter your SQL query here
 select ...
 
-
+test
 
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
