@@ -3,4 +3,7 @@
 */
 
 -- Enter your SQL query here
-select ...
+
+select count(*) from durations
+where duration <= 10
+;
