@@ -5,4 +5,4 @@
 -- Enter your SQL query here
 SELECT count(*)
 from indego_trips_2019_q2
-where duration < 5
+where duration < 10
