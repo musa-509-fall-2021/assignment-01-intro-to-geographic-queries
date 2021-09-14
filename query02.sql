@@ -7,9 +7,27 @@
 */
 
 -- Enter your SQL query here
-select ...
 
+------- Solution 1: using Q1 -------
 
+SELECT  ROUND((COUNT(*)::numeric - 206354) / 206354,3)::text || '%' 
+AS percentage_change
+FROM indego_trips_2020_q2
+
+------- Solution 2: without using Q1 -------
+
+WITH count2019 AS
+(
+  SELECT COUNT(*)::numeric AS count2019
+  FROM indego_trips_2019_q2
+), count2020 AS
+(
+  SELECT COUNT(*)::numeric AS count2020
+  FROM indego_trips_2020_q2
+)
+SELECT ROUND(((count2020 - count2019) / count2019), 3) ::text || '%' 
+AS percentage_change
+FROM count2019, count2020
 
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string

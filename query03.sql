@@ -3,4 +3,7 @@
 */
 
 -- Enter your SQL query here
-select ...
+
+SELECT  round(AVG(duration),3) AS avg_duration_2019
+FROM indego_trips_2019_q2;
+
