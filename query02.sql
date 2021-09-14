@@ -8,13 +8,13 @@
 
 -- Enter your SQL query here
 
--- Solution 1: using Q1
+------- Solution 1: using Q1 -------
 
 SELECT  ROUND((COUNT(*)::numeric - 206354) / 206354,3)::text || '%' 
 AS percentage_change
 FROM indego_trips_2020_q2
 
--- Solution 2: without using Q1
+------- Solution 2: without using Q1 -------
 
 WITH count2019 AS
 (
