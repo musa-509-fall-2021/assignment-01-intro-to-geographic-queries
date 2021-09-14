@@ -6,8 +6,13 @@
 
 WITH 
     full_time as (
-        SELECT EXTRACT(EPOCH FROM (TO_TIMESTAMP(end_time, 'MM/DD/YYYY HH24:MI') - TO_TIMESTAMP(start_time, 'MM/DD/YYYY HH24:MI'))) AS time_difference
-      	FROM public.indego_trips_2020_q2
+        SELECT 
+      CAST(EXTRACT(EPOCH FROM (end_time - start_time)) AS int) AS time_difference
+      	FROM public.indego_trips_2019_q2
     )
-SELECT *
+SELECT 
+	AVG(time_difference)/60 as avg_minutes_per_trip
 FROM full_time
+WHERE time_difference IS NOT NULL
+
+-- Average Duration of 24.696 Minutes per trip in 2019 Q2
