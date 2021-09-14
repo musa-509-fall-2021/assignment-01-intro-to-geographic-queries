@@ -4,6 +4,4 @@
 
 -- Enter your SQL query here
 
-select avg(duration)
-from indego_trips_2020_q2
-;
+select avg(duration) from indego_trips_2020_q2;

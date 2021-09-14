@@ -15,3 +15,4 @@ SELECT * FROM durations
   ORDER BY duration DESC
   LIMIT 1
 ;
+  

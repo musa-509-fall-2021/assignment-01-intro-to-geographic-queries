@@ -22,4 +22,5 @@ WITH datetimes AS (
 
 SELECT count(*)
 FROM datetimes
-WHERE startday != endday;
+WHERE startday != endday
+;

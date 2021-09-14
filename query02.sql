@@ -19,6 +19,7 @@ select n2019, n2020, ((n2020::float-n2019::float)/n2020*100)::decimal(4,2)::text
 from c19
 INNER JOIN c20
 on c19.n=c20.n
+;
 
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
