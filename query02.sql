@@ -7,9 +7,8 @@
 */
 
 -- Enter your SQL query here
-select ...
-
-
+select ROUND(((COUNT(*)::numeric - 206354)/206354)*100,2)::text || '%' as c
+from indego_trips_2020_q2
 
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
