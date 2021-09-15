@@ -3,4 +3,5 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT MAX(duration)
+FROM public.indego_trips_2020_q2
