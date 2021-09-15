@@ -44,11 +44,15 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 5. [What is the longest duration trip?](query05.sql)
 
+**Result:** 1440
+
     _Why are there so many trips of this duration?_
 
     **Answer:**
 
 6. [How many trips were shorter than 10 minutes?](query06.sql)
+
+**Result:** 46729
 
 7. [How many trips started on one day and ended in the next?](query07.sql)
 
