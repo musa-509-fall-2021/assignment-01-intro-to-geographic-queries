@@ -15,7 +15,7 @@ with c19 as (
   select 1 as n, count(*) as n2020
   from indego_trips_2020_q2
 )
-select n2019, n2020, ((n2020::float-n2019::float)/n2020*100)::decimal(4,2)::text || '%' as pctchg
+select n2019, n2020, ((n2020::float-n2019::float)/n2019*100)::decimal(4,2)::text || '%' as pctchg
 from c19
 INNER JOIN c20
 on c19.n=c20.n
