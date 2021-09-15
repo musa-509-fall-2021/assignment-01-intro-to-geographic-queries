@@ -3,4 +3,6 @@
 */
 
 -- Enter your SQL query here
-select ...
+select avg(duration) from indego_trips_2019_q2
+
+RESULT: 23.674069802378437
