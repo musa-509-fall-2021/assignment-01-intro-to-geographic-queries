@@ -6,4 +6,5 @@
 */
 
 -- Enter your SQL query here
-select ...
+select DISTINCT passholder_type
+from indego_trips_2020_q2
