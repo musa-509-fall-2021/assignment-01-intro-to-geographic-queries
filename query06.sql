@@ -3,4 +3,6 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT COUNT(*)
+FROM public.indego_trips_2020_q2
+WHERE duration < 10
