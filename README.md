@@ -31,7 +31,11 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 3. [What is the average duration of a trip for 2019?](query03.sql)
 
+ **Result:** 23.67
+
 4. [What is the average duration of a trip for 2020?](query04.sql)
+
+ **Result:** 39.24
 
     _What do you notice about the difference in trip lengths? Give a few explanations for why there could be a difference here._
 
