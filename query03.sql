@@ -3,5 +3,5 @@
 */
 
 -- Enter your SQL query here
-SELECT AVG(duration)
+SELECT ROUND(AVG(duration), 2)
 FROM public.indego_trips_2019_q2
