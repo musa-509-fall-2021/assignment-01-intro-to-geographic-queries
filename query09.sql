@@ -6,6 +6,6 @@
 */
 
 -- Enter your SQL query here
-SELECT COUNT (*)
+SELECT passholder_type, COUNT (*)
 from indego_trips_2020_q2
 GROUP BY passholder_type
