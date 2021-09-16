@@ -7,7 +7,7 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT ROUND((COUNT(*)-206354)/206354, 4) FROM indego_trips_2020_q2；
 
 
 
