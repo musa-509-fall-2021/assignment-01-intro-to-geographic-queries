@@ -7,8 +7,8 @@
 WITH 
     full_time as (
         SELECT 
-      CAST(EXTRACT(EPOCH FROM (end_time - start_time)) AS int) AS time_difference
-      	FROM public.indego_trips_2019_q2
+        CAST(EXTRACT(EPOCH FROM (end_time - start_time)) AS int) AS time_difference
+      	FROM indego_trips_2019_q2
     )
 SELECT 
 	AVG(time_difference)/60 as avg_minutes_per_trip
