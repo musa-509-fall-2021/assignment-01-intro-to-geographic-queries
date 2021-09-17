@@ -3,4 +3,4 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT TIMESTAMP_DIFF(end_time,start_time,minute) FROM indego_trips_2020_q2
