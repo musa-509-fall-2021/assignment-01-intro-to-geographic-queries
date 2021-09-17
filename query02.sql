@@ -7,7 +7,9 @@
 */
 
 -- Enter your SQL query here
-select ...
+select 
+round(((select count(*) from indego_trips_2020_q2) *1.0 / 
+(select count(*) from indego_trips_2019_q2)*100),4)::text || '%' AS perc_change
 
 
 
