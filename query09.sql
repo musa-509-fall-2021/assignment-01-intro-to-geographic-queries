@@ -6,4 +6,9 @@
 */
 
 -- Enter your SQL query here
-select ...
+select passholder_type, count(*),'2019' as year from public.indego_trips_2019_q2
+group by passholder_type
+union
+select passholder_type, count(*),'2020' as year from public.indego_trips_2020_q2
+group by passholder_type
+
