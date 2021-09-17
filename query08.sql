@@ -13,5 +13,7 @@ with startStationTrips as (
 )
 
 
+
+
 select *
 from startStationTrips
