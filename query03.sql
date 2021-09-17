@@ -3,4 +3,5 @@
 */
 
 -- Enter your SQL query here
-select ...
+select avg(duration) as average_duration
+from indego_trips_2019_q2
