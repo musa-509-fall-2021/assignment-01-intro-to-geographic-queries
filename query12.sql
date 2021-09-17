@@ -4,5 +4,5 @@
 
 -- Enter your SQL query here
 
-select * from distances
+select count(*) from distances
 where meyerson_dist <= 1000;
