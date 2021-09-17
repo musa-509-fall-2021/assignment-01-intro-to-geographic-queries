@@ -3,5 +3,5 @@
 */
 
 -- Enter your SQL query here
-SELECT count(*)
+SELECT count(*) AS total_trips
 FROM indego_trips_2019_q2

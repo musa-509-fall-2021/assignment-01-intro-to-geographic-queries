@@ -3,7 +3,7 @@
 */
 
 -- Enter your SQL query here
-SELECT max(duration) FROM
+SELECT max(duration) AS longest_trip FROM
   (SELECT trip_id, duration, start_time::date
   FROM indego_trips_2019_q2
   UNION ALL

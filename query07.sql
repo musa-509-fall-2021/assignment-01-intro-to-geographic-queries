@@ -3,7 +3,7 @@
 */
 
 -- Enter your SQL query here
-SELECT COUNT(*) FROM 
+SELECT COUNT(*) AS num_trips_spanning_2days FROM 
   (SELECT trip_id, duration, date_part('day',start_time::date) AS start_day, date_part('day',end_time::date) AS end_day
   FROM indego_trips_2019_q2
   UNION ALL

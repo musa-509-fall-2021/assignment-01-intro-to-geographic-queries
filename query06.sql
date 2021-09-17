@@ -3,7 +3,7 @@
 */
 
 -- Enter your SQL query here
-SELECT count(*) FROM 
+SELECT count(*) AS num_trips_under_10min FROM 
   (SELECT trip_id, duration, start_time::date
   FROM indego_trips_2019_q2
   UNION ALL

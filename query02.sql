@@ -7,7 +7,7 @@
 */
 
 -- Enter your SQL query here
-SELECT round(((count(*)::numeric - 206354)/206354)*100,2)::text || '%' AS c
+SELECT round(((count(*)::numeric - 206354)/206354)*100,2)::text || '%' AS q2_percent_change
 FROM indego_trips_2020_q2
 
 /*
