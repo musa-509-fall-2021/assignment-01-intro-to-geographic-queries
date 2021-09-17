@@ -3,17 +3,14 @@
 */
 
 -- Enter your SQL query here
-with startStationTrips as (
-  select start_station, count(*)
-        filter (where (extract(hour from start_time) >= 7) and
-                      (extract(hour from end_time) <= 10)
-                )
-  from indego_trips_2019_q2
-  group by start_station
-)
 
-
-
-
-select *
-from startStationTrips
+select s.station_name, count(*)
+      filter (where (extract(hour from start_time) >= 7) and
+                    (extract(hour from end_time) <= 10)
+              ) as tripCount
+from indego_trips_2019_q2 t
+inner join indego_stations s 
+on t.start_station = s.station_id
+group by s.station_name
+order by tripCount desc
+limit 5
