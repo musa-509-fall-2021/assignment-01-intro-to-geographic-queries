@@ -70,6 +70,8 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 11. [What is the average distance (in meters) of all stations from Meyerson Hall?](query11.sql)
 
+**Result:** 3741 meters
+
 12. [How many stations are within 1km of Meyerson Hall?](query12.sql)
 
 13. [Which station is furthest from Meyerson Hall?](query13.sql)
