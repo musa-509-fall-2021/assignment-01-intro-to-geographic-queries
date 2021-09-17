@@ -77,3 +77,5 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 **Result:** Thompson & Palmer
 
 14. [Which station is closest to Meyerson Hall?](query14.sql)
+
+**Result:** 34th and Spruce
