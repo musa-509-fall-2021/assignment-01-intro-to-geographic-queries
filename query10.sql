@@ -4,4 +4,6 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT id, name, st_distance(the_geom, st_setsrid(st_point(-75.1948736, 39.9522363), 4326)::geography) as distance
+from public.station_status
+

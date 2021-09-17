@@ -7,7 +7,9 @@
 */
 
 -- Enter your SQL query here
-select ...
+select concat (round ((1.0 * (select count(*) from public.indego_trips_2020_q2) / 
+	   (select count(*) from public.indego_trips_2019_q2) - 1) * 100, 2), '%')
+as change_trips
 
 
 
