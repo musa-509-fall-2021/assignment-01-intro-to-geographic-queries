@@ -3,4 +3,9 @@
 */
 
 -- Enter your SQL query here
-select ...
+
+select count(*) from durations
+where duration <= 10 and year=2019;
+
+select count(*) from durations
+where duration <= 10 and year=2020;

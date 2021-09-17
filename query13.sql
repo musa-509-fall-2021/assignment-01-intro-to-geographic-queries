@@ -6,4 +6,7 @@
 */
 
 -- Enter your SQL query here
-select ...
+
+select * from distances
+order by meyerson_dist DESC
+limit 1;

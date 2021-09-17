@@ -3,4 +3,5 @@
 */
 
 -- Enter your SQL query here
-select ...
+
+select avg(meyerson_dist) as average from distances;
