@@ -35,13 +35,13 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
     _What do you notice about the difference in trip lengths? Give a few explanations for why there could be a difference here._
 
-    **Answer:**
+    **Answer:** The average trip got significantly longer in Q2 2020 by about 50%. This is likely a result of COVID having an impact on trip behavior. Perhaps there were fewer shorter, leisure trips and more longer essential travel (like commuting).
 
 5. [What is the longest duration trip?](query05.sql)
 
     _Why are there so many trips of this duration?_
 
-    **Answer:**
+    **Answer:** There are 637 trips with a duration of 1440 minutes (or 24 hours). These are likely trips where the bike was never returned (or some other error) and the trip clock stops counting after 24 hours. I suspect at this point the bike is considered lost. 
 
 6. [How many trips were shorter than 10 minutes?](query06.sql)
 
