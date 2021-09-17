@@ -74,4 +74,6 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 13. [Which station is furthest from Meyerson Hall?](query13.sql)
 
+**Result:** Thompson & Palmer
+
 14. [Which station is closest to Meyerson Hall?](query14.sql)
