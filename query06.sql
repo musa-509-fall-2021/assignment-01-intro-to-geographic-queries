@@ -5,4 +5,7 @@
 -- Enter your SQL query here
 
 select count(*) from durations
-where duration <= 10;
+where duration <= 10 and year=2019;
+
+select count(*) from durations
+where duration <= 10 and year=2020;
