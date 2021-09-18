@@ -7,9 +7,9 @@
 */
 
 -- Enter your SQL query here
-SELECT (count(*) / 206354.0 - 1) * 100
+SELECT round(((count(*) / 206354.0 - 1) * 100),2) ::text || '%' AS perc_change
 from indego_trips_2020_q2
-
+result：-9.58%
 
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
