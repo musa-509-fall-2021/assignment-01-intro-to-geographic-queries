@@ -1,3 +1,8 @@
+-- Johnathan Clementi --
+-- MUSA 509 Geospatial Cloud Computing & Vizualization --
+-- HW #1 2021-09-19 --
+-- Query #9 --
+
 /*
   List all the passholder types and number of trips for each.
 
@@ -6,4 +11,15 @@
 */
 
 -- Enter your SQL query here
-select ...
+with indego_trips_Q2_19and20 as (
+  select trip_id, passholder_type 
+  from indego_trips_2019_q2
+  union
+  select trip_id,passholder_type 
+  from indego_trips_2020_q2
+)
+
+select passholder_type, count(*) as numtrips
+from indego_trips_Q2_19and20
+group by passholder_type
+order by passholder_type

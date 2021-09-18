@@ -8,15 +8,11 @@
 */
 
 -- Enter your SQL query here
-with indego_trips_Q2_19and20 as (
-  /* select extract(day from start_time), 
-        extract(day from end_time) 
+with q2_19 as (
+  select extract(day from start_time) as startDay19, 
+        extract(day from end_time) as endDay19
         from indego_trips_2019_q2
-  union */
-  select /* extract(day from */ to_date(start_time,'MM/DD/YYYY')/* ) */, 
-        /* extract(day from */ to_date(end_time,'MM/DD/YYYY')/* )  */
-        from indego_trips_2020_q2
 )
 
-select * /* count(duration > 10) as tripsLess10Min */
-from indego_trips_Q2_19and20
+select count(*) filter(where startDay19 <> endDay19) as difDayTrips
+from q2_19

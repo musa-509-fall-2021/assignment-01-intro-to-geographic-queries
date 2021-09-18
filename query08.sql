@@ -1,3 +1,7 @@
+-- Johnathan Clementi --
+-- MUSA 509 Geospatial Cloud Computing & Vizualization --
+-- HW #1 2021-09-19 --
+-- Query #8 --
 /*
   Give the five most popular starting stations between 7am and 10am in 2019.
 */
