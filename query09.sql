@@ -6,4 +6,16 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT passholder_type, COUNT(passholder_type)
+FROM indego_trips_2019_q2
+GROUP BY passholder_type;
+
+/*
+Answer:
+Day Pass: 34197
+Indego30: 133344
+Indego365: 37843
+IndegoFlex: 851
+NULL: 35
+Walk-up: 84
+*/
