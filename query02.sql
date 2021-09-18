@@ -7,8 +7,8 @@
 */
 
 -- Enter your SQL query here
-select ...
-
+SELECT (count(*) / 206354.0 - 1) * 100
+from indego_trips_2020_q2
 
 
 /*
