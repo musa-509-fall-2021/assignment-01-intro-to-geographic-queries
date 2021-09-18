@@ -4,5 +4,8 @@
 */
 
 -- Enter your SQL query here
-SELECT indego_station_statuses.id,indego_station_statuses.name,st_distance(ST_Transform(the_geom,4326)::geography, ST_Transform('SRID=4326;POINT(-75.19268489458014 39.95241719826734)'::geometry,4326)::geography) AS distance
-FROM indego_station_statuses 
+SELECT id,
+     name, 
+     st_transform(st_setsrid(the_geom, 4326), 3857) as the_geom_webmercator,
+     st_distance(st_transform(st_setsrid(the_geom,4326),3857),st_transform(st_setsrid(st_makepoint(-75.19273854113067,39.95235140309713),4326),3857)) as distance
+FROM indego_station_statuses
