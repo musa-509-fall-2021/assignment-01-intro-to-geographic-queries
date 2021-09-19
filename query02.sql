@@ -9,7 +9,12 @@
 -- Enter your SQL query here
 select ...
 
-test
+select a.cnt_2019,b.cnt_2020,round((b.cnt_2020-a.cnt_2019)/(a.cnt_2019*1.0)*100,2)||'%'as compare
+from
+(SELECT count(*) as cnt_2019
+FROM indego_trips_2019_q2)as a,
+(SELECT count(*) as cnt_2020
+FROM indego_trips_2020_q2)as b
 
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
