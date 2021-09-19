@@ -4,10 +4,12 @@
   Using only the table from Q2 2020 and the number calculated in the previous
   question, find the percent change of number of trips in Q2 2020 as compared
   to 2019. Remember you can do calculations in the select clause.
+  
+  ANSWER:0.0090%
 */
 
 -- Enter your SQL query here
-SELECT ROUND((COUNT(*)-206354)/206354, 4) FROM indego_trips_2020_q2；
+SELECT ROUND((COUNT(*)-206354)/206354, 4) FROM indego_trips_2020_q2
 
 
 
