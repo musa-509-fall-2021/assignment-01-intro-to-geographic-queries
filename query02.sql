@@ -8,7 +8,8 @@
 
 -- Enter your SQL query here
 select ...
-
+select count(*)
+from indego_trips_2019_q2
 
 
 /*
