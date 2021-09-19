@@ -29,6 +29,8 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 2. [What is the percent change in trips in Q2 2020 as compared to Q2 2019?](query02.sql)
     _Bonus: If you want to get fancier here, you can cast the result to a string and concatenate a `'%'` to the end. For example, `(10 + 3.2)::text || '%' AS perc_change`. This uses the type casting (number to string) and string concatenation operator (`||`, double pipes) that's essentially a `+` for strings._
 
+**Result:** -9.6%
+
 3. [What is the average duration of a trip for 2019?](query03.sql)
 
  **Result:** 23.67
