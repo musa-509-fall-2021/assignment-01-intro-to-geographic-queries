@@ -1,15 +1,15 @@
 /*
   Give the five most popular starting stations between 7am and 10am in 2019.
   ANSWER:
-  The cartodb_id of the five most popular starting stations between 7am and 10am in 2019 are: 
-  199210, 203830, 201544, 91469, 86308
+  The start_station of the five most popular starting stations between 7am and 10am in 2019 are: 
+  3102,3012,3007,3064,3100
 */
 
 -- Enter your SQL query here
-SELECT cartodb_id
-FROM indego_trips_2019_q2
+SELECT start_station, COUNT(*) AS frequency FROM indego_trips_2019_q2 
 WHERE
 	EXTRACT(HOUR FROM start_time) >= 7 AND EXTRACT(HOUR FROM end_time) <= 9
-ORDER BY start_station DESC
+GROUP BY start_station 
+ORDER BY frequency DESC
 LIMIT 5
 
