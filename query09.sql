@@ -6,4 +6,13 @@
 */
 
 -- Enter your SQL query here
-select ...
+select d.a,sum (d.b)
+from
+(select passholder_type as a,count(*) as b
+from indego_trips_2019_q2
+group by passholder_type
+union all
+select passholder_type as a,count(*) as b
+from indego_trips_2020_q2
+group by passholder_type)d
+group by d.a
