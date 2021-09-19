@@ -10,9 +10,9 @@ SELECT
 	COUNT(*)
 FROM indego_trips_2019_q2
     WHERE 
-    EXTRACT(DAY FROM end_time) - EXTRACT(DAY FROM start_time) = 1;
+    EXTRACT(DAY FROM end_time) - EXTRACT(DAY FROM start_time) = 1
 SELECT 
 	COUNT(*)
 FROM indego_trips_2020_q2
     WHERE 
-    EXTRACT(DAY FROM end_time::date) - EXTRACT(DAY FROM start_time::date) = 1;
+    EXTRACT(DAY FROM end_time::date) - EXTRACT(DAY FROM start_time::date) = 1
