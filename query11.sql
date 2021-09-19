@@ -9,4 +9,4 @@ select AVG(
               ST_Transform('SRID=4326; 
                            POINT( -75.19245084288279 39.952469494960795)'::geometry, 
                            3857))
-              ) as average_distance from indego_station_statues;
+              ) as average_distance from indego_station_statues
