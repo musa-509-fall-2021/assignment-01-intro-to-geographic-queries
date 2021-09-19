@@ -3,7 +3,11 @@
 */
 
 -- Enter your SQL query here
-select count(*)
-from indego_trips_2020_q2
-where extract(day from end_time :: date) - extract (day from start_time :: date) = 1
-result = 2557
+select count(*), '2019' as year
+from indego_trips_2019_q2
+where extract(day from end_time :: date) != extract (day from start_time :: date)
+union
+select count(*), '2020' as year
+from public.indego_trips_2020_q2
+where extract(day from to_date(start_time, 'MM/DD/YYYY HH24/MI/SS')) != extract(day from to_date(end_time, 'MM/DD/YYYY HH24/MI/SS'))
+
