@@ -1,11 +1,14 @@
 /*
   What is the longest duration trip? Why are there so many trips of this duration?
-  ANSWER: For 2020 the longest duration trip is 1440
-  While for 2019 the longest duration is also 1440. In detail, it is a One Way, Day Pass and standard bike one.
-
+  ANSWER: The longest duration trip for both 2019 and 2020 is 1440, with a One Way, Day Pass and standard bike. 
+  This riding lasted for about three days. I infered that this is a shared bike taken by many travellers.
 */
 
 -- Enter your SQL query here
+SELECT AVG(duration) FROM indego_trips_2019_q2
+SELECT AVG(duration) FROM indego_trips_2020_q2
+
+/* For a more detailed querying to answer why there so many trips of this duration: */
 SELECT * FROM indego_trips_2019_q2
 ORDER BY duration DESC
 LIMIT 1
