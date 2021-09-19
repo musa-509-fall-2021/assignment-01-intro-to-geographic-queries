@@ -4,6 +4,7 @@
   Your query should return only one line, and only gives the station id, station
   name, and distance from Meyerson Hall.
   
+ANSWER: Chestnut & Broad is the closest to Meyerson Hall.
 id  3255
 name Chestnut & Broad
 distance 3132.612699968969
