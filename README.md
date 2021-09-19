@@ -64,6 +64,8 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
     _Hint: Use the `EXTRACT` function to get the hour of the day from the timestamp._
 
+**Result:** 3102, 3012, 3064, 3007, 3066
+
 9. [List all the passholder types and number of trips for each.](query09.sql)
 
 10. [Using the station status dataset, find the distance in meters of all stations from Meyerson Hall.](query10.sql)
