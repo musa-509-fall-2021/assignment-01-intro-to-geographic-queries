@@ -6,4 +6,11 @@
 */
 
 -- Enter your SQL query here
-select ...
+with indego_trips as(
+  select trip_id, passholder_type from indego_trips_2019_q2
+  union
+  select trip_id, passholder_type from indego_trips_2020_q2
+)
+select passholder_type, count(*)
+from indego_trips
+group by passholder_type
