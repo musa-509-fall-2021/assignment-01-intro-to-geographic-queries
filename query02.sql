@@ -9,7 +9,7 @@
 */
 
 -- Enter your SQL query here
-SELECT ROUND((COUNT(*)-206354)/206354, 4) FROM indego_trips_2020_q2
+SELECT ROUND ((SELECT COUNT(*) FROM indego_trips_2020_q2) * 1.0/(206354*100),4)::text || '%' AS per_change
 
 
 
