@@ -3,4 +3,8 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT COUNT(extract(day from end_time::timestamp - start_time::timestamp))
+FROM indego_trips_2019_q2
+WHERE extract(day from end_time::timestamp - start_time::timestamp)=1
+
+-- Returned with 118
