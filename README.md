@@ -68,6 +68,8 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 9. [List all the passholder types and number of trips for each.](query09.sql)
 
+**Result:** Day Pass, 34197; Indego30, 133344; Indego365, 37843; IndegoFlex, 851; NULL, 35; Walk-Up, 84
+
 10. [Using the station status dataset, find the distance in meters of all stations from Meyerson Hall.](query10.sql)
 
 11. [What is the average distance (in meters) of all stations from Meyerson Hall?](query11.sql)
