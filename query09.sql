@@ -8,7 +8,7 @@
 -- Enter your SQL query here
 SELECT passholder_type, COUNT(passholder_type)
 FROM indego_trips_2019_q2
-GROUP BY passholder_type;
+GROUP BY passholder_type
 
 /*
 Answer:
