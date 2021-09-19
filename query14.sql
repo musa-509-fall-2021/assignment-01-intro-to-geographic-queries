@@ -5,8 +5,8 @@
   name, and distance from Meyerson Hall.
   
 id  3255
-number Chestnut & Broad
-name 3132.612699968969
+name Chestnut & Broad
+distance 3132.612699968969
 */
 
 -- Enter your SQL query here
