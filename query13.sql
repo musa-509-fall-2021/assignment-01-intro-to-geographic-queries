@@ -4,9 +4,9 @@
   Your query should return only one line, and only gives the station id, station
   name, and distance from Meyerson Hall.
   
-id  3255
-number Chestnut & Broad
-name 3132.612699968969
+id  3004
+number Municipal Services Building Plaza
+name 3201.737297227914
 */
 
 -- Enter your SQL query here
@@ -20,5 +20,5 @@ with distance as (
 
 SELECT id, name, dist_m
 FROM distance
-ORDER BY distance DESC
+ORDER BY distance ASC
 LIMIT 1
