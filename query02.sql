@@ -7,7 +7,12 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT 
+	ROUND(
+      (100.0*(COUNT(*) - 206354) / 206354),1)::text     
+      || '%'
+      As PercentDiff
+FROM indego_trips_2020_q2
 
 
 
