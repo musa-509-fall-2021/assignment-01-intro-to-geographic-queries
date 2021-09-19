@@ -2,6 +2,8 @@
   How many trips started on one day and ended in the next?
 */
 
+Answer - 5296
+
 -- Enter your SQL query here
 select sum(sum1) FROM
 (select count(*) as sum1
