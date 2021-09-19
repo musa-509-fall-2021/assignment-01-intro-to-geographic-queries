@@ -12,10 +12,17 @@ GROUP BY passholder_type
 
 /*
 Answer:
+For year 2019, it is:
 Day Pass: 34197
 Indego30: 133344
 Indego365: 37843
 IndegoFlex: 851
 NULL: 35
 Walk-up: 84
+
+For year 2020, it is:
+Day Pass: 38165
+Indego30: 129905
+Indego365: 18515
+IndegoFlex: 1
 */
