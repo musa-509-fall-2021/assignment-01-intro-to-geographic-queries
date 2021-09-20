@@ -13,4 +13,4 @@ SELECT
 FROM full_time
 WHERE seconds_difference IS NOT NULL
 
--- longest trip was 29.8 Days
+-- For Q2 2020, the longest trip was 29.8 Days

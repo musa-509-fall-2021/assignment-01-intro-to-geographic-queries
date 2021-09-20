@@ -13,4 +13,4 @@ SELECT
 FROM full_time
 WHERE seconds_difference < 60*10
 
--- Answer: 46,786 trips below 10 minutes
+-- Answer: For Q2 2020, 46,786 trips below 10 minutes

@@ -3,8 +3,8 @@
 */
 
 SELECT 
-    COUNT(*)
+  COUNT(*) as trips_ending_the_next_day
 FROM public.indego_trips_2020_q2
-WHERE EXTRACT(DAY FROM (end_time)) <> EXTRACT(DAY FROM (start_time))
+WHERE EXTRACT(DOY FROM (start_time)) + 1 = EXTRACT(DOY FROM (end_time))
 
--- Answer: 3,000 trips started and ended in different days
+-- Answer: For Q2 2020, 2,648 trips started and ended on the next day

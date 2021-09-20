@@ -7,15 +7,15 @@ WITH
     SELECT
         start_station AS station,
         COUNT(*) AS station_uses
-    FROM public.indego_trips_2020_q2
+    FROM public.indego_trips_2019_q2
     WHERE EXTRACT(HOUR FROM (end_time)) < 10 AND EXTRACT(HOUR FROM (start_time)) > 6
     GROUP BY start_station
   ), commute_end_stations AS (
     SELECT
         end_station AS station,
         COUNT(*) AS station_uses
-    FROM public.indego_trips_2020_q2
-    WHERE EXTRACT(HOUR FROM (end_time)) < 10 AND EXTRACT(HOUR FROM (start_time)) > 6
+    FROM public.indego_trips_2019_q2
+    WHERE EXTRACT(HOUR FROM (end_time)) < 10 AND EXTRACT(HOUR FROM (start_time)) > 6 AND end_station <> start_station
     GROUP BY end_station
   ), commute_stations AS (
     SELECT 
@@ -31,4 +31,15 @@ FROM commute_stations
 ORDER BY station_uses DESC
 LIMIT 5
 
--- Answer: Top 5 Stations (Start & End Stations combined) between 7am & 10am: 3057 (1532 uses), 3052 (690 uses), 3102 (614 uses), 3010 (515 uses), 3208 (513 uses)
+Answer: Top 5 Stations (Start & End Stations combined) between 7am & 10am in the table below
+/*
+Answer: Top 5 Stations (Start & End Stations combined) between 7am & 10am in the table below
+(includes both end & start but not double-counted)
+    | station | station_uses |
+    |:-------:|:------------:|
+    | 3021    |        1,696 |
+    | 3102    |        1,369 |
+    | 3195    |        1,366 |
+    | 3010    |        1,365 |
+    | 3020    |        1,300 |
+*/
