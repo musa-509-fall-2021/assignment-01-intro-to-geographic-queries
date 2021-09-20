@@ -3,8 +3,11 @@
 */
 
 -- Enter your SQL query here
-select max(duration) as max_2020
-from indego_trips_2020_q2
+select max(duration) 
+from 
+(select duration from indego_trips_2020_q2
+UNION
+select duration from indego_trips_2019_q2) as total
 
 /*
 Why are there so many trips of this duration?
