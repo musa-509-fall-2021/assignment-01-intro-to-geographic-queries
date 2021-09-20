@@ -54,7 +54,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 6. [How many trips were shorter than 10 minutes?](query06.sql)
 
-**Result:** 46729
+**Result:** 74958 (2019); 46729 (2020)
 
 7. [How many trips started on one day and ended in the next?](query07.sql)
 
