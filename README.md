@@ -37,6 +37,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
     **Answer:**
     Despite the fact that the number of trips decreased by 9% from 2019 to 2020, the average duration was 16 minutes longer in 2020 than it was in 2019.  The pandemic is likely the reason for the decline in trips - riders were staying home.  However, the pandemic could also account for the longer rides.  Riders may have been uncomfortable taking public transit or uber/lyft, so when riders needed to get somewhere (which was less often) they biked, even if it was further than they would normally bike.  Additionally, since gyms closed due to COVID-19, perhaps riders used the bikes for exercise as well.  Rides for exercise might be longer than rides for travel. 
+    Alternatively, the price structure of rides might have changed, unrelated to the pandemic, and longer rides might be cheaper in 2020 than 2019.
 
 5. [What is the longest duration trip?](query05.sql)
 
