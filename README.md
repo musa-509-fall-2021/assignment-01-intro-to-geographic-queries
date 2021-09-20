@@ -135,8 +135,8 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     from indego_station_statuses)
    select count(distance) from distance_table
     where distance <= 1000
-   ``` 
-    **Answer:** 8
+   ```
+   **Answer:** 8
 
 13. [Which station is furthest from Meyerson Hall?](query13.sql)
    ```SQL
