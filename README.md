@@ -62,7 +62,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
     _Hint 2: Days of the month can be retrieved from a timestamp using the [EXTRACT](https://www.postgresql.org/docs/12/functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT) function. See also some of the follow alongs from the Lecture in week 2._
     
-**Result:** 2,557 trips
+**Result:** 1,600 trips (2019); 2,557 trips (2020)
 
 8. [Give the five most popular starting stations between 7am and 10am in 2019.](query08.sql)
 
