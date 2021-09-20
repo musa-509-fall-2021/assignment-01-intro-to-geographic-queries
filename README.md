@@ -35,13 +35,16 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
     _What do you notice about the difference in trip lengths? Give a few explanations for why there could be a difference here._
 
-    **Answer:**
+    **Answer:**  
+    In 2019 or before, most people may prefer taking the bus or train to places that are over 25-minute bike-ride, maybe it is tiring to ride for a long time.However in 2020, because of the pandemic, people do not want to take public transportation anymore. To keep social distance, more and more people choose to ride bikes.After all, riding a little longer is nothing comparing to the risk of getting infected with the deadly virus.
 
 5. [What is the longest duration trip?](query05.sql)
 
     _Why are there so many trips of this duration?_
 
     **Answer:**
+    Maybe because the current stations is not convinient for a great portion of users, so they do not park the bike in the station and just park the bike in other places. Thus, the bike is not scaned twice(start and end) by some sensors in the station. It will show that the trip is still going on untill it reaches the maximum time which is 1 day(1440min).
+
 
 6. [How many trips were shorter than 10 minutes?](query06.sql)
 
