@@ -7,9 +7,10 @@
 */
 
 -- Enter your SQL query here
-select ...
+select (((206354 - count(*)) * 100) / 206453) :: text || '%' AS percent_difference
+from indego_trips_2020_q2
 
-
+RESULT: 9%
 
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
