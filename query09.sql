@@ -6,4 +6,8 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT 
+	passholder_type,
+    COUNT(*) AS number_of_trips
+FROM public.indego_trips_2019_q2
+GROUP BY passholder_type
