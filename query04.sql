@@ -7,6 +7,10 @@ select avg(duration) as average_duration
 from indego_trips_2020_q2
 
 /*
+The query result: 39.23600913251798
+*/
+
+/*
 What do you notice about the difference in trip lengths? 
 Give a few explanations for why there could be a difference here.
 
