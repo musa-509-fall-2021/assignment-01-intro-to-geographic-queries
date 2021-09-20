@@ -17,3 +17,7 @@ Answer:
 Because 1440 minutes equal to 24 hours which is the maximum duration of a single day.
 
 */
+
+/*
+The query result: 9
+*/
