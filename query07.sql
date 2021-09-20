@@ -2,7 +2,14 @@
   How many trips started on one day and ended in the next?
 */
 
--- Enter your SQL query here
+-- For 2019:
+
+SELECT 
+	COUNT(trip_id)
+FROM indego_trips_2019_q2 
+WHERE EXTRACT(DAY from start_time) + 1 = EXTRACT(DAY from end_time)
+
+-- For 2020:
 SELECT 
 	COUNT(trip_id)
 FROM indego_trips_2020_q2 
