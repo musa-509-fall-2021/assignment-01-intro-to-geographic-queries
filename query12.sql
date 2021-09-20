@@ -10,3 +10,7 @@ from station_status)
 select count(*)
 from distances
 where distance_meter <1000
+
+/*
+The query result: 9
+*/
