@@ -5,8 +5,8 @@
 */
 
 -- Enter your SQL query here
-SELECT AVG(duration) FROM indego_trips_2019_q2
-SELECT AVG(duration) FROM indego_trips_2020_q2
+SELECT MAX(duration) FROM indego_trips_2019_q2
+SELECT MAX(duration) FROM indego_trips_2020_q2
 
 /* For a more detailed querying to answer why there so many trips of this duration: */
 SELECT * FROM indego_trips_2019_q2
