@@ -14,3 +14,8 @@ select id, name, distance_meter as distance_from_meyerson
 from distances
 order by distance_meter desc
 limit 1
+
+/*
+The query result: 
+3183	15th & Kitty Hawk	9208.726066032597
+*/
