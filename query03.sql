@@ -5,3 +5,7 @@
 -- Enter your SQL query here
 select avg(duration) as average_duration
 from indego_trips_2019_q2
+
+/*
+The query result: 23.674069802378437
+*/
