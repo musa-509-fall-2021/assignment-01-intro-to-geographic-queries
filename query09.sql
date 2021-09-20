@@ -6,11 +6,16 @@
 */
 
 -- Enter your SQL query here
-select passholder_type, count(*) as amount
-from indego_trips_2019_q2 
-group by passholder_type
-union all
-select passholder_type, count(*) as amount
-from indego_trips_2020_q2 
-group by passholder_type
+select a.passholder_type, a.amount_2019, b.amount_2020
+from (
+  select passholder_type, count(*) as amount_2019
+  from indego_trips_2019_q2 
+  group by passholder_type
+) as a
+left join(
+  select passholder_type, count(*) as amount_2020
+  from indego_trips_2020_q2 
+  group by passholder_type
+) as b
+on a.passholder_type = b.passholder_type 
 
