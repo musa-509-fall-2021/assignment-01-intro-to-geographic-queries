@@ -11,7 +11,9 @@ select
 round(((select count(*) from indego_trips_2020_q2) *1.0 / 
 (select count(*) from indego_trips_2019_q2)*100),4)::text || '%' AS perc_change
 
-
+/*
+The query result: 90.4203%
+*/
 
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
