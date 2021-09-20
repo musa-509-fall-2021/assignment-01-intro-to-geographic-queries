@@ -80,6 +80,8 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 12. [How many stations are within 1km of Meyerson Hall?](query12.sql)
 
+**Result:** 9 stations
+
 13. [Which station is furthest from Meyerson Hall?](query13.sql)
 
 **Result:** Thompson & Palmer
