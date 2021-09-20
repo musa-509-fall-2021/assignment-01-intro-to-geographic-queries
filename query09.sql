@@ -5,5 +5,10 @@
   and the number of trips taken by `passholder_type`.
 */
 
--- Enter your SQL query here
-select ...
+SELECT
+  passholder_type,
+  COUNT(*) as trips
+FROM public.indego_trips_2020_q2
+GROUP BY passholder_type
+
+-- Answer: Day Pass (38,165 trips), Indego30 (12,9905 trips), Indego365 (18,515 trip), IndegoFlex (1 trip)
