@@ -50,7 +50,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
     _Why are there so many trips of this duration?_
 
-    **Answer:**
+    **Answer:** Indego offers a popular 24-hour bike rental option, so it would make sense that so many trips last for 1,440 minutes, which is equal to 24 hours.
 
 6. [How many trips were shorter than 10 minutes?](query06.sql)
 
