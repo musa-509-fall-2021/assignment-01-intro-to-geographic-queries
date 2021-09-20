@@ -24,6 +24,6 @@ with new_table as (
   on a.passholder_type2019=b.passholder_type2020
 )
 
-select passholder_type2019,
+select passholder_type2019 as passholder_type,
       count_2019+count_2020 as num_type
 from new_table
