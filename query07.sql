@@ -11,3 +11,5 @@ SELECT start_time::date, end_time::date, EXTRACT(DAY FROM start_time::date) as s
 select count (*)
 from q2_days
 where start_day != end_day
+
+RESULT: 4782
