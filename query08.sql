@@ -28,3 +28,15 @@ and extract(hour from start_time)>=7
 group by start_station
 order by count(*) desc
 limit 5
+
+/*
+The query result:
+3102 1150
+3012 891
+3007 743
+3064 700
+3100 688
+*/
+
+
+
