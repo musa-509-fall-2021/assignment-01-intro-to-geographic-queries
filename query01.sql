@@ -4,4 +4,6 @@
 
 -- Enter your SQL query here
 select count(*)
-from indego_trips_2019_q2
+from indego_trips_2019_q2;
+
+-- Answer: 206354 trips
