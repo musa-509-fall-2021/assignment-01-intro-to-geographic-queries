@@ -36,12 +36,14 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     _What do you notice about the difference in trip lengths? Give a few explanations for why there could be a difference here._
 
     **Answer:**
+    The average duration is 16 minutes longer in 2020 than it was in 2019.  This could be due to ______
 
 5. [What is the longest duration trip?](query05.sql)
 
     _Why are there so many trips of this duration?_
 
     **Answer:**
+    There are 1440 minutes in a day.  From looking at some of the values in the start_time and end_time columns it is clear that any ride that lasted longer than a full day is considered 1440 minutes.  Therefore there are many rides with a duration of 1440 because the duration maxes out at that number.
 
 6. [How many trips were shorter than 10 minutes?](query06.sql)
 
