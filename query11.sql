@@ -10,3 +10,8 @@ st_distance(ST_Transform(the_geom::geometry, 3857), ST_Transform('SRID=4326;POIN
 from station_status)
 select avg(distance_meter) as average_distance
 from distances as average_distance
+
+
+/*
+The query result: 3741.3290790517144
+*/
