@@ -7,10 +7,11 @@
 */
 
 -- Enter your SQL query here
-select ...
 
-
-
+select round
+(
+  (((select count(*) from indego_trips_2020_q2)-(select count(*) from indego_trips_2019_q2))*100.0/(select count(*) from indego_trips_2019_q2)),2
+)::text || '%' as pct_change_total_trip
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
   and concatenate a '%' to the end. For example:

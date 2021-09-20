@@ -6,4 +6,7 @@
 */
 
 -- Enter your SQL query here
-select ...
+select name
+from station_status
+order by st_Distance(the_geom,st_setsrid(st_MakePoint(-75.1927, 39.9522),4326), false) 
+limit 1

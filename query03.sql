@@ -3,4 +3,6 @@
 */
 
 -- Enter your SQL query here
-select ...
+select avg(duration) as avg_duration_2019
+FROM indego_trips_2019_q2
+

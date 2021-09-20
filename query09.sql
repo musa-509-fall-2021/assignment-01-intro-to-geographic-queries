@@ -6,4 +6,11 @@
 */
 
 -- Enter your SQL query here
-select ...
+select passholder_type, count(*) as amount
+from indego_trips_2019_q2 
+group by passholder_type
+union all
+select passholder_type, count(*) as amount
+from indego_trips_2020_q2 
+group by passholder_type
+
