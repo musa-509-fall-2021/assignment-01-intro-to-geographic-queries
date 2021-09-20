@@ -14,3 +14,8 @@ select id, name, distance_meter as distance_from_meyerson
 from distances
 order by distance_meter
 limit 1
+
+/*
+The query result: 
+3208	34th & Spruce	258.554927366241
+*/
