@@ -46,7 +46,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 5. [What is the longest duration trip?](query05.sql)
 
-**Result:** 1440
+**Result:** 1440; 170 trips in 2019, 467 trips in 2020
 
     _Why are there so many trips of this duration?_
 
