@@ -214,6 +214,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
   ```
     **Result:** 14
 
+
 13. [Which station is furthest from Meyerson Hall?](query13.sql)
 
    ```sql
@@ -223,6 +224,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
    limit 1
   ```
     **Result:** 34th & Spruce
+
 
 14. [Which station is closest to Meyerson Hall?](query14.sql)
 
