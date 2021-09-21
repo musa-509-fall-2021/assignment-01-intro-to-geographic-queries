@@ -177,6 +177,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
         NULL                35
     -----------------------------------
         Walk-up             84
+
      ```
 10. [Using the station status dataset, find the distance in meters of all stations from Meyerson Hall.](query10.sql)
     ```sql
