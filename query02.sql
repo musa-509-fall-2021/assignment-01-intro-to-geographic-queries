@@ -12,6 +12,7 @@ From indego_trips_2020_q2
 
 -- Result: -9.58%
 
+
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
   and concatenate a '%' to the end. For example:
