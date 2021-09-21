@@ -187,7 +187,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
        name, st_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE)||m
               as distance_from_meyerson
     from indego_bikeshare_data_station_status_data
-    ```
+  ```
 
       _second solution
     ```sql
@@ -195,7 +195,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
           name, the_geom <-> (st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE)
            as distance_from_meyerson
     FROM  indego_bikeshare_data_station_status_data
-     ```
+  ```
 
 11. [What is the average distance (in meters) of all stations from Meyerson Hall?](query11.sql)
     ```sql
@@ -203,7 +203,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     avg( st_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE))
           as distance_from_meyerson
      from indego_bikeshare_data_station_status_data
-     ```
+  ```
       **Result:**  2861.9014772768105
 
 12. [How many stations are within 1km of Meyerson Hall?](query12.sql)
@@ -212,7 +212,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     FROM indego_bikeshare_data_station_status_data   
     WHERE
        st_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE) <1000
-     ```
+  ```
     **Result:** 14
 
 13. [Which station is furthest from Meyerson Hall?](query13.sql)
@@ -222,7 +222,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
    from indego_bikeshare_data_station_status_data
    order by ST_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326))asc
    limit 1
-   ```
+  ```
     **Result:** 34th & Spruce
 
 14. [Which station is closest to Meyerson Hall?](query14.sql)
@@ -232,5 +232,5 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
    from indego_bikeshare_data_station_status_data
    order by ST_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326))desc
    limit 1
-   ```
+  ```
    **Result:**   Thompson & Palmer, Adaire School
