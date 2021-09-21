@@ -7,10 +7,9 @@
 */
 
 -- Enter your SQL query here
-select ...
-
-
-
+SELECT
+ (100*((SELECT count(*) FROM indego_trips_2020_q2)-
+ (SELECT count(*) FROM indego_trips_2019_q2))::numeric / (SELECT count(*) FROM indego_trips_2020_q2)) ::text || '%' AS perc_change
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
   and concatenate a '%' to the end. For example:

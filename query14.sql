@@ -6,4 +6,4 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT MIN (st_distance(the_geom::geography,st_setsrid(st_makepoint(-75.19265592098236,39.95222903068502)::geography,4326)))FROM indego_station_statuses
