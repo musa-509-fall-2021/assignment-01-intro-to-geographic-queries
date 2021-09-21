@@ -181,7 +181,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 10. [Using the station status dataset, find the distance in meters of all stations from Meyerson Hall.](query10.sql)
 
-    fitst question
+      _first solution
     ```sql
     SELECT
        name, st_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE)||m
@@ -189,7 +189,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     from indego_bikeshare_data_station_status_data
     ```
 
-    second solution
+      _second solution
     ```sql
     SELECT
           name, the_geom <-> (st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE)
@@ -213,7 +213,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     WHERE
        st_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE) <1000
      ```
-**Result:** 14
+    **Result:** 14
 
 13. [Which station is furthest from Meyerson Hall?](query13.sql)
 
@@ -223,7 +223,8 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
    order by ST_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326))asc
    limit 1
    ```
-**Result:** 34th & Spruce
+    **Result:** 34th & Spruce
+
 14. [Which station is closest to Meyerson Hall?](query14.sql)
 
    ```sql
@@ -232,4 +233,4 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
    order by ST_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326))desc
    limit 1
    ```
-**Result:**   Thompson & Palmer, Adaire School
+   **Result:**   Thompson & Palmer, Adaire School
