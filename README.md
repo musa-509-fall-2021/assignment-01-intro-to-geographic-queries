@@ -189,7 +189,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     from indego_bikeshare_data_station_status_data
   ```
 
-  
+
     ```sql
     SELECT
           name, the_geom <-> (st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE)
