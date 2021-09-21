@@ -1,6 +1,7 @@
 /*
   Using the station status dataset, find the distance in meters of all stations
   from Meyerson Hall.
+  The answer was a large table that I can not comment here. Just run the code.
 */
 
 -- Enter your SQL query here
