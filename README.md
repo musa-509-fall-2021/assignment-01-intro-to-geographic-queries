@@ -197,12 +197,13 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     ```
 
 11. [What is the average distance (in meters) of all stations from Meyerson Hall?](query11.sql)
+
     ```sql
     SELECT
     avg( st_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE))
           as distance_from_meyerson
      from indego_bikeshare_data_station_status_data
-  ```
+    ```
       **Result:**  2861.9014772768105
 
 12. [How many stations are within 1km of Meyerson Hall?](query12.sql)
