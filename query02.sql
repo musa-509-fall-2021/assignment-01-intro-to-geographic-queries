@@ -7,10 +7,14 @@
 */
 
 -- Enter your SQL query here
-select ...
+SELECT count(*)
+FROM indego_trips_2019_q2
 
+-- Returned with 186586, then:
+SELECT  
+    100.0*(186586 - 206354) / 206354 As PercentDiff
 
-
+-- Returned with the value -9.579654380336702, which is -9.58%
 /*
   Bonus: If you want to get fancier here, you can cast the result to a string
   and concatenate a '%' to the end. For example:
