@@ -13,3 +13,6 @@ FROM indego_station_statuses)
 SELECT (AVG(distance))::text||'m'
 FROM all_distance
 
+/*
+  answer: 3744.50m
+*/
