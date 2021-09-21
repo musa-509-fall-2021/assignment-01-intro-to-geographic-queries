@@ -3,14 +3,17 @@
 */
 
 -- Enter your SQL query here
-SELECT trip_id,duration
-FROM indego_trips_2020_q2
-WHERE indego_trips_2020_q2.duration IN
-( SELECT max(duration)
- FROM indego_trips_2020_q2)
+with union_table as (
+  SELECT a.trip_id,a.duration,2019 as year
+  FROM indego_trips_2019_q2 a
+  UNION
+  SELECT b.trip_id,b.duration,2020 as year
+  FROM indego_trips_2020_q2 b)
  
+SELECT year,max(duration)
+FROM union_table
+GROUP BY 1
  
---result:1440
 
 /*
 Why are there so many trips of this duration?
