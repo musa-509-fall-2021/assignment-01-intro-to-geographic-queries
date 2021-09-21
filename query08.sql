@@ -11,17 +11,22 @@ WITH start_station_amount AS(SELECT start_station
    FROM indego_trips_2019_q2
 	WHERE EXTRACT(HOUR FROM START_TIME) = 7 AND EXTRACT(HOUR FROM END_TIME) = 9)
 , unioned_table as(
-SELECT start_station
+SELECT start_station as station_id
 FROM start_station_amount
 UNION ALL 
 SELECT end_station
 FROM end_station_amount)
-
-SELECT start_station,COUNT(*) AS frequency
-FROM unioned_table
-GROUP BY start_station
-ORDER BY 2 DESC
+, left_join_table AS(
+  SELECT *
+  FROM unioned_table
+  LEFT JOIN indego_station_statuses
+      on unioned_table.station_id 
+      = indego_station_statuses.id)
+      
+SELECT count(*) AS frequency, name,station_id
+FROM left_join_table
+GROUP BY 2,3
+ORDER BY frequency DESC
 LIMIT 5
 
---result:3021,3102,3156,3052,3045
 
