@@ -65,17 +65,35 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     )
 
     select
-        bucket,
         case
             when bucket <= 15
             then ((bucket - 1) * (120 / 15))::text || ' to ' || (bucket * (120 / 15))::text
             else ((bucket - 1) * (120 / 15))::text || '+'
-        end || ' min' as range
+        end || ' min' as range,
         h2019.cnt as cnt_2019,
         h2020.cnt as cnt_2020
     from histogram_2019 h2019
     join histogram_2020 h2020 using (bucket)
     ```
+
+    | range | cnt_2019 | cnt_2020 |
+    |-------|----------|----------|
+    | 0 to 8 min | 50203 | 33717 |
+    | 8 to 16 min | 79205 | 45776 |
+    | 16 to 24 min | 33443 | 28174 |
+    | 24 to 32 min | 15102 | 18079 |
+    | 32 to 40 min | 7239 | 12622 |
+    | 40 to 48 min | 4919 | 10316 |
+    | 48 to 56 min | 3715 | 9309 |
+    | 56 to 64 min | 2795 | 6878 |
+    | 64 to 72 min | 1567 | 4150 |
+    | 72 to 80 min | 1167 | 3171 |
+    | 80 to 88 min | 885 | 2329 |
+    | 88 to 96 min | 752 | 1788 |
+    | 96 to 104 min | 565 | 1426 |
+    | 104 to 112 min | 458 | 1060 |
+    | 112 to 120 min | 373 | 900 |
+    | 120+ min | 3966 | 6891 |
 
     ![Chart showing frequency of trip durations, 2019 vs 2020](freq-of-trip-durations.png)
 
