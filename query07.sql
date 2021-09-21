@@ -6,13 +6,17 @@
 */
 
 -- Enter your SQL query here
-SELECT 
-	COUNT(*)
+SELECT trips_sum
+FROM(
+  SELECT 
+	COUNT(*) AS trips_sum
 FROM indego_trips_2019_q2
     WHERE 
     EXTRACT(DAY FROM end_time) - EXTRACT(DAY FROM start_time) = 1
-SELECT 
-	COUNT(*)
-FROM indego_trips_2020_q2
+  UNION
+   SELECT 
+	COUNT(*) AS trips_sum
+  FROM indego_trips_2020_q2
     WHERE 
     EXTRACT(DAY FROM end_time::date) - EXTRACT(DAY FROM start_time::date) = 1
+  ) AS Q7
