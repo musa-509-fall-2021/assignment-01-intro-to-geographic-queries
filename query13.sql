@@ -5,9 +5,9 @@
   name, and distance from Meyerson Hall.
   
 ANSWER: 
-id  3004
-number Municipal Services Building Plaza
-name 3201.737297227914
+id  3183
+station name 15th & Kitty Hawk
+distance 9242.068380699047
 */
 
 -- Enter your SQL query here
@@ -21,5 +21,5 @@ with distance as (
 
 SELECT id, name, dist_m
 FROM distance
-ORDER BY distance ASC
+ORDER BY dist_m DESC
 LIMIT 1
