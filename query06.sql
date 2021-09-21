@@ -16,3 +16,5 @@ with indego_trips_Q2_19and20 as (
 
 select count(duration > 10) as tripsLess10Min
 from indego_trips_Q2_19and20
+
+--     **Answer:** 1228 trips in Q2 of 2019 and Q2 of 2020 in total

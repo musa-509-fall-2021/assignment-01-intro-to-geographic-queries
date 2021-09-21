@@ -18,3 +18,10 @@ on t.start_station = s.station_id
 group by s.station_name
 order by tripCount desc
 limit 5
+
+  -- **Answer:** 
+  -- 1. Pennsylvania & Fairmount Perelman Building - 1280 rides
+  -- 2. 21st & Catharine - 1088 rides
+  -- 3. 11th & Pine, Kahn Park - 858 rides
+  -- 4. 18th & Washington, Chew Playground - 836 rides
+  -- 5. Moyamensing & Tasker - 792 rides

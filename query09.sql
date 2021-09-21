@@ -23,3 +23,11 @@ select passholder_type, count(*) as numtrips
 from indego_trips_Q2_19and20
 group by passholder_type
 order by passholder_type
+
+-- **Answer:** 
+-- 1. Day Pass - 72,362 trips
+-- 2. Indego30 - 263,249 trips
+-- 3. Indego365 - 56,358 trips
+-- 4. IndegoFlex - 852 trips
+-- 5. NULL - 35 trips
+-- 6. Walk-up - 84 trips

@@ -20,3 +20,5 @@ with distFromMeyerson as (
 select count(*) filter(
   where metersFromMeyerson <= 1000) as NumStations_wIn_1kmMeyerson
 from distFromMeyerson
+
+-- **Answer:** There are 9 stations within 1 km of Meyerson Hall

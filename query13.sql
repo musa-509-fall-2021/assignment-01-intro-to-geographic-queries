@@ -21,3 +21,6 @@ select
 from indego_station_statuses
 order by metersFromMeyerson desc
 limit 1
+
+
+-- **Answer:** 15th & Kitty Hawk (Station ID: 3183) is 9213.56 meters from Meyerson Hall

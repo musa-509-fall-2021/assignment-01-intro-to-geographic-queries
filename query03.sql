@@ -11,21 +11,5 @@
 select round(avg(duration),2) as avgDurQ2_2019
 from indego_trips_2019_q2
 
+-- **Result:** 23.67 Minutes
 
-
-
-/* 
-While it wasn't necessary, I was able to calculate the average across all four quarters:
-
-with indego_trips_2019 as (
-  select duration from indego_trips_2019_q1
-  union
-  select duration from indego_trips_2019_q2
-  union
-  select duration from indego_trips_2019_q3
-  union
-  select duration from indego_trips_2019_q4
-)
-
-select avg(duration)
-from indego_trips_2019 */

@@ -16,3 +16,5 @@ with indego_trips_Q2_19and20 as (
 
 select max(duration)
 from indego_trips_Q2_19and20
+
+-- **Answer:** 1440 minutes

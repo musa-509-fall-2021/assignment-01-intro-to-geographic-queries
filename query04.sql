@@ -10,3 +10,5 @@
 -- Enter your SQL query here
 select round(avg(duration),2) as avgDurQ2_2020
 from indego_trips_2020_q2
+
+-- **Result:** 39.24 Minutes

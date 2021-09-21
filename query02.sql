@@ -24,6 +24,7 @@ select count19, count20,
     round(((count20::float-count19::float)/count20*100)::numeric,2)::text || '%' as pctChange
 from q2_19, q2_20
 
+-- **Result:** There was a 10.59% decrease in trips from Q2 of 2019 to Q2 of 2020
 
 /* 
 There were 186586 bike trips in Q2 of 2020

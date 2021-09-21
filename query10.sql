@@ -18,3 +18,9 @@ select
 from indego_station_statuses
 order by metersFromMeyerson asc
 
+-- **Answer:** (First five)
+-- 1. 34th & Spruce - 263.88 meters
+-- 2. 34th & Chestnut - 323.32 meters
+-- 3. 36th & Samsom - 328.74 meters
+-- 4. 33rd & Market - 600.45 meters
+-- 5. University City Station - 607.94 meters

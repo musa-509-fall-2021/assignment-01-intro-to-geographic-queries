@@ -16,3 +16,5 @@ with q2_19 as (
 
 select count(*) filter(where startDay19 <> endDay19) as difDayTrips
 from q2_19
+
+-- **Answer:** 1782 trips in Q2 of 2019 and Q2 of 2020 in total

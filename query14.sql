@@ -21,3 +21,5 @@ select
 from indego_station_statuses
 order by metersFromMeyerson asc
 limit 1
+
+-- **Answer:** 34th & Spruce (station ID: 3208) is 263.88 meters from Meyerson Hall

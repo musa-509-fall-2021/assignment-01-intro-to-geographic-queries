@@ -15,3 +15,5 @@ select
   ))::numeric, 2) as avgMetersFromMeyerson
   
 from indego_station_statuses
+
+-- **Answer:** 3740.24 meters
