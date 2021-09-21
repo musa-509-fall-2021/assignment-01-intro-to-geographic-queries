@@ -77,6 +77,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
      select max(duration)as a from indego_trips_2019_q2)as d
     ```
     **Result:** 1440
+
     **Answer:**
     Because 1440 minutes is also the duration of a whole day, so I guess maybe it's because many people tend to not return the bike so that they can use the bike the other day.or they just forgot to lock the bike after they finish riding. But the bike will automatically lock after 24 hours,which is 1440 minutes.
 
@@ -132,7 +133,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     ```
 
       **Result:**  
-
+    ```sql
       start_station           count
       -----------------------------------
           3102                 1320
@@ -144,6 +145,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
           3064                 877
       -----------------------------------
           3100                 807
+       ```
 
 9. [List all the passholder types and number of trips for each.](query09.sql)
 
@@ -161,6 +163,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     ```
 
        **Result:**  
+         ```sql
           a                  sum
     -----------------------------------
         Day Pass            72362
@@ -174,7 +177,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
         NULL                35
     -----------------------------------
         Walk-up             84
-
+     ```
 10. [Using the station status dataset, find the distance in meters of all stations from Meyerson Hall.](query10.sql)
     ```sql
     --***solution first****
