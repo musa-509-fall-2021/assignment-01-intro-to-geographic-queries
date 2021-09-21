@@ -3,4 +3,9 @@
 */
 
 -- Enter your SQL query here
-select ...
+select start_station as most_popular_station
+from indego_trips_2019_q2
+where extract(hour from start_time) in (7,10)
+group by start_station
+order by count(*) DESC
+limit 5
