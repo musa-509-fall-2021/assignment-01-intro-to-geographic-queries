@@ -6,4 +6,7 @@
 */
 
 -- Enter your SQL query here
-select ...
+select *
+from indego_bikeshare_data_station_status_data
+order by ST_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326))asc
+limit 1;
