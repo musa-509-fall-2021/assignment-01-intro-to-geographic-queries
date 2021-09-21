@@ -62,9 +62,15 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     SELECT MAX(DURATION)
     FROM indego_trips_2019_q2
     ```
-    **Answer:** 1440 mins = 24 hours
+    **Answer:** 1440 mins = 24 hours for both year
 
 6. [How many trips were shorter than 10 minutes?](query06.sql)
+   ```SQL
+   SELECT count(duration)
+   from indego_trips_2019_q2
+   where duration < 10
+   ```
+   **Answer:** 74958
    ```SQL
    SELECT count(duration)
    from indego_trips_2020_q2
@@ -80,6 +86,12 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
    WHERE extract(day from end_time::timestamp - start_time::timestamp)=1
    ```
    **Answer:** 118
+   ```SQL
+   SELECT COUNT(extract(day from end_time::timestamp - start_time::timestamp))
+   FROM indego_trips_2020_q2
+   WHERE extract(day from end_time::timestamp - start_time::timestamp)=1
+   ```
+   **Answer:** 246
 
 8. [Give the five most popular starting stations between 7am and 10am in 2019.](query08.sql)
 
@@ -108,6 +120,19 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     IndegoFlex	851
     Day Pass	34197
     NULL	35
+    
+    for 2020
+    ```SQL
+    SELECT passholder_type,
+    COUNT(*)
+    FROM  indego_trips_2020_q2
+    GROUP BY passholder_type
+    ```
+    passholder_type count (2020Q2)
+    Day Pass   38165
+    Indego30   129905
+    Indego365  18515
+    IndegoFlex 1
 10. [Using the station status dataset, find the distance in meters of all stations from Meyerson Hall.](query10.sql)
    ```SQL
    select st_distance(
