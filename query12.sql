@@ -14,4 +14,3 @@ SELECT COUNT(*)
 FROM all_distance
 WHERE distance < 1000
 
---result:8
