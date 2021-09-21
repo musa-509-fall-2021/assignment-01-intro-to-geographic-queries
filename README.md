@@ -131,6 +131,15 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
     For a short explanation of my numbers and choice of projection, see https://youtu.be/fwJVR0DAlq4
 
+> **A quick note** on my choice of PostGIS function for the following answers:
+> * For #11 I use `ST_Distance`
+> * For #12 I use `ST_DWithin`
+> * For #13 and #14 I use the distance operator (`<->`)
+>
+> Each of these is appropriate at different times. In #12-14, I'm filtering the records that I'm interested in (for #12, it's just those records that are within a km of a point, for #13 & 14 it's only the closest or farthest records from a point) so I choose distance operations that can take advantage of spatial indexes. Those operations are listed [here](http://postgis.net/workshops/postgis-intro/indexing.html#spatially-indexed-functions) (in addition to the [distance operator](https://postgis.net/docs/geometry_distance_knn.html)). That way PostGIS can do a quick elimination of many rows using the index.
+>
+> For #11 I know that I'm going to have to calculate the actual distance on each record to get the average, so it doesn't matter whether I use an index-enabled operation or not. The index is useful for determining what I _don't_ have to look at. For those records I do have to look at, the index isn't going to make my distance calculation any faster.
+
 11. [What is the average distance (in meters) of all stations from Meyerson Hall?](query11.sql)
 
     **Result:** 2859.8037516355557 m
