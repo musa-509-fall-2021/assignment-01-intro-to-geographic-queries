@@ -6,9 +6,16 @@
 */
 
 -- Enter your SQL query here
-SELECT passholder_type, COUNT(passholder_type)
+SELECT type, count
+FROM(
+  SELECT passholder_type AS type, COUNT(passholder_type) AS count
 FROM indego_trips_2019_q2
 GROUP BY passholder_type
+  UNION
+  SELECT passholder_type AS type, COUNT(passholder_type) AS count
+FROM indego_trips_2020_q2
+GROUP BY passholder_type
+  ) AS Q9
 
 /*
 Answer:
