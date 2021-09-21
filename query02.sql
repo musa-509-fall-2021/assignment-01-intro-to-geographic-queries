@@ -7,7 +7,8 @@
 */
 
 -- Enter your SQL query here
-select ...
+select round((count(*) - 206354) / 206354.0 * 100, 2)::text || '%'
+from indego_trips_2020_q2
 
 
 
