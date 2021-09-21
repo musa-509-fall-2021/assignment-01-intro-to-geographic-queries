@@ -8,6 +8,7 @@ FROM indego_trips_2020_q2
 
 --result:39.24 
 
+
 /*
 What do you notice about the difference in trip lengths? Give a few explanations for why there could be a difference here.
 
