@@ -7,7 +7,6 @@
 */
 
 -- Enter your SQL query here
-
 select round
 (
   (((select count(*) from indego_trips_2020_q2)-(select count(*) from indego_trips_2019_q2))*100.0/(select count(*) from indego_trips_2019_q2)),2

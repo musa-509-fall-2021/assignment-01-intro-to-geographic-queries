@@ -11,6 +11,7 @@ where duration =
   from indego_trips_2019_q2
   )
 
-
-#Why are there so many trips of this duration?
-#Answer: Because that is the duration limit in the system or database, even for those trips that are longer than 1440 mins (1day) the duration records will be 1440.
+/*
+Why are there so many trips of this duration?
+Answer: Because that is the duration limit in the system or database, even for those trips that are longer than 1440 mins (1day) the duration records will be 1440.
+*/
