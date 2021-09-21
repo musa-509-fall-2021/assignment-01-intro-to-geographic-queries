@@ -14,4 +14,3 @@ WHERE  st_distance(st_transform(st_setsrid(the_geom,4326),3857),st_transform(st_
 (SELECT MAX(st_distance(st_transform(st_setsrid(the_geom,4326),3857),st_transform(st_setsrid(st_makepoint(-75.19273854113067,39.95235140309713),4326),3857)))
  FROM indego_station_statuses)
 
--- answer: 15th&Kitty Hawk
