@@ -181,7 +181,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
 
 10. [Using the station status dataset, find the distance in meters of all stations from Meyerson Hall.](query10.sql)
 
-      _first solution
+
     ```sql
     SELECT
        name, st_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE)||m
@@ -189,7 +189,7 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
     from indego_bikeshare_data_station_status_data
   ```
 
-      _second solution
+  
     ```sql
     SELECT
           name, the_geom <-> (st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE)
