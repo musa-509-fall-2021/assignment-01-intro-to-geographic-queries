@@ -206,12 +206,13 @@ Fork this repository and fill in each of the SQL files corresponding to the ques
       **Result:**  2861.9014772768105
 
 12. [How many stations are within 1km of Meyerson Hall?](query12.sql)
+
     ```sql
     SELECT count(*)
     FROM indego_bikeshare_data_station_status_data   
     WHERE
        st_distance(the_geom,st_setsrid(st_makepoint(-75.19263125091902,39.95238429917612),4326),FALSE) <1000
-  ```
+    ```
     **Result:** 14
 
 13. [Which station is furthest from Meyerson Hall?](query13.sql)
