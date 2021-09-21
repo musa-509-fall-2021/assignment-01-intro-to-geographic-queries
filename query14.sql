@@ -4,10 +4,10 @@
   Your query should return only one line, and only gives the station id, station
   name, and distance from Meyerson Hall.
   
-ANSWER: Chestnut & Broad is the closest to Meyerson Hall.
-id  3255
-name Chestnut & Broad
-distance 3132.612699968969
+ANSWER: 34th & Chestnut is the closest to Meyerson Hall.
+id  3207
+name 34th & Chestnut
+distance 286.2311263448966
 */
 
 -- Enter your SQL query here
@@ -21,5 +21,5 @@ with distance as (
 
 SELECT id, name, dist_m
 FROM distance
-ORDER BY distance DESC
+ORDER BY dist_m ASC
 LIMIT 1
